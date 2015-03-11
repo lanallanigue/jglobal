@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">    
+<name>FormGet Contact Form</name>    
+<author>Neeraj Agarwal</author>    
+<creationDate>November, 2013</creationDate>    
+<copyright>Copyright (C) 2013 Neeraj ( FormGet.com ). All rights reserved.</copyright>    
+<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>    
+<authorEmail>neeraj@formget.com</authorEmail>    
+<authorUrl>http://www.formget.com</authorUrl>    
+<version>1.0</version>    
+<description>PLG_CONTENT_FORMGET_DESC</description>    
+<languages folder="language">        
+	<language tag="en-GB">en-GB/en-GB.plg_content_formget.ini</language>        
+	<language tag="en-GB">en-GB/en-GB.plg_content_formget.sys.ini</language>    
+</languages>    
+<help url="PLG_CONTENT_FORMGET_HELP_URL"/>    
+<files>        
+	<filename plugin="formget">formget.php</filename>		
+	<filename>index.html</filename>		
+	<filename>README.md</filename>    
+</files>    
+<config>        
+	<fields name="params">            
+		<fieldset name="PLG_CONTENT_FORMGET_BASIC">						
+			<field type="spacer" class="span12" name="myspacer" label="PLG_CONTENT_FORMGET_HELP"/>		   
+		</fieldset> 
+		<fieldset name="PLG_CONTENT_FORMGET_TAB">						
+			<field name="tabview" type="textarea" default="" label="PLG_CONTENT_FORMGET_CUSTOM_BUTTON_CODE" description="PLG_CONTENT_FORMGET_CUSTOM_BUTTON_CODE_DESC" class="span6" cols="50" rows="10" filter="raw" />						
+		</fieldset>   
+		<fieldset name="PLG_CONTENT_FORMGET_SUPPORT">						
+			<field type="spacer" class="span12" name="myspacer" label="PLG_CONTENT_FORMGET_SUPPORT"/>		   
+		</fieldset> 		
+	</fields>    
+</config>
+</extension>
